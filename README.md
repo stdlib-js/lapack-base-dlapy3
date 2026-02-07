@@ -35,19 +35,32 @@ limitations under the License.
 
 > LAPACK routine to calculate `sqrt(x^2 + y^2 + z^2)` in a manner which doesn't cause unnecessary overflow.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/lapack-base-dlapy3
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import dlapy3 from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlapy3@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/lapack-base-dlapy3/tags). For example,
-
-```javascript
-import dlapy3 from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlapy3@v0.1.0-deno/mod.js';
+var dlapy3 = require( '@stdlib/lapack-base-dlapy3' );
 ```
 
 #### dlapy3( x, y, z )
@@ -86,9 +99,9 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import dlapy3 from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlapy3@deno/mod.js';
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var dlapy3 = require( '@stdlib/lapack-base-dlapy3' );
 
 var opts = {
     'dtype': 'float64'
@@ -106,7 +119,73 @@ logEachMap( 'dlapy3( %d, %d, %d ) = %0.4f', x, y, z, dlapy3 );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+TODO
+```
+
+#### TODO
+
+TODO.
+
+```c
+TODO
+```
+
+TODO
+
+```c
+TODO
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+TODO
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -125,7 +204,7 @@ logEachMap( 'dlapy3( %d, %d, %d ) = %0.4f', x, y, z, dlapy3 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -155,8 +234,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/lapack-base-dlapy3.svg
 [npm-url]: https://npmjs.org/package/@stdlib/lapack-base-dlapy3
 
-[test-image]: https://github.com/stdlib-js/lapack-base-dlapy3/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/lapack-base-dlapy3/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/lapack-base-dlapy3/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/lapack-base-dlapy3/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/lapack-base-dlapy3/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/lapack-base-dlapy3?branch=main
